@@ -4,9 +4,9 @@ using namespace std;
 
 /// constants
 const int MAX_TESTS = 100;
-const int MAX_LENGTH = 10;
-const int MAX_WIDTH = 10;
-const int MAX_HEIGHT = 2;
+const int MAX_LENGTH = 100;
+const int MAX_WIDTH = 100;
+const int MAX_HEIGHT = 100;
 
 /**
  * @brief 
