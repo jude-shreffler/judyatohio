@@ -3,10 +3,9 @@
 using namespace std;
 
 /// constants
-const int MAX_TESTS = 101;
-const int MAX_LENGTH = 101;
-const int MAX_WIDTH = 101;
-const int MAX_HEIGHT = 101;
+const int MAX_TESTS = 100;
+const int MAX_LENGTH = 100;
+const int MAX_WIDTH = 100;
 
 /**
  * @brief 
@@ -63,16 +62,19 @@ int main() {
     int tests[MAX_TESTS][MAX_LENGTH][MAX_WIDTH];
     
     /// input the number of tests
-    /// cout << "Input number of test cases: ";
+    cout << "Input number of test cases: ";
     cin >> numTests;
+    numTests--;
 
     /// input all the tests into tests[][][]
     for (int i = 0; i < numTests; i++) {
-        /// cout << "Input size of test #" << i + 1 << ": ";
+        cout << "Input size of test #" << i + 1 << ": ";
         cin >> testHeight;
+        testHeight--;
         cin >> testWidth;
+        testWidth--;
         for (int j = 0; j < testHeight; j++) {
-            /// cout << "Input line #" << j + 1 << ": ";
+            cout << "Input line #" << j + 1 << ": ";
             for (int k = 0; k < testWidth; k++) {
                 cin >> tests[i][j][k];
             }
@@ -129,12 +131,7 @@ bool checkXAxis(int tests[MAX_TESTS][MAX_LENGTH][MAX_WIDTH], int test, int lengt
 }
 
 bool checkCell(int tests[MAX_TESTS][MAX_LENGTH][MAX_WIDTH], int test, int length, int width) {
-    /// if the cell is 0, return true
-    if (tests[test][length][width] == 0) {
-        return true;
-    }
-
-    /// next do the yaxis and xaxis check
+    /// do the yaxis and xaxis check
     if (checkYAxis(tests, test, length, width) || checkXAxis(tests, test, length, width)) {
         return true;
     }
