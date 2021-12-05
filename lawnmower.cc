@@ -3,10 +3,10 @@
 using namespace std;
 
 /// constants
-const int MAX_TESTS = 100;
-const int MAX_LENGTH = 100;
-const int MAX_WIDTH = 100;
-const int MAX_HEIGHT = 100;
+const int MAX_TESTS = 101;
+const int MAX_LENGTH = 101;
+const int MAX_WIDTH = 101;
+const int MAX_HEIGHT = 101;
 
 /**
  * @brief 
