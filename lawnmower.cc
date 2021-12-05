@@ -63,16 +63,16 @@ int main() {
     int tests[MAX_TESTS][MAX_LENGTH][MAX_WIDTH];
     
     /// input the number of tests
-    cout << "Input number of test cases: ";
+    /// cout << "Input number of test cases: ";
     cin >> numTests;
 
     /// input all the tests into tests[][][]
     for (int i = 0; i < numTests; i++) {
-        cout << "Input size of test #" << i + 1 << ": ";
+        /// cout << "Input size of test #" << i + 1 << ": ";
         cin >> testHeight;
         cin >> testWidth;
         for (int j = 0; j < testHeight; j++) {
-            cout << "Input line #" << j + 1 << ": ";
+            /// cout << "Input line #" << j + 1 << ": ";
             for (int k = 0; k < testWidth; k++) {
                 cin >> tests[i][j][k];
             }
